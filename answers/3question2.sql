@@ -1,0 +1,1 @@
+SELECT t.name, p.name FROM pokemons p INNER JOIN types t ON p.secondary_type=t.id WHERE p.name='Rufflet';
