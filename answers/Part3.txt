@@ -17,3 +17,4 @@ How many pokemon at level 100 does each trainer with at least one level 100 poke
 SELECT COUNT(*) FROM pokemon_trainer LEFT JOIN trainers ON trainers.trainerID=pokemon_trainer.pokemon_id WHERE pokemon_trainer.pokelevel>= 100;
 
 How many pokemon only belong to one trainer and no other?
+SELECT COUNT(pokemon_trainer.pokemon_id) FROM pokemon_trainer GROUP BY

@@ -1,0 +1,1 @@
+SELECT COUNT(id) FROM pokemons WHERE secondary_type IS NOT null;
